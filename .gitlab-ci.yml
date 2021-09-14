@@ -1,0 +1,13 @@
+variables:
+  AUTOVALIDATE_R: "false"
+  AUTOVALIDATE_R_DEPLOY: "true"
+
+include:
+  - project: 'autovalidate-r/gitlab-ci'
+    ref: 'dev/strict-mode'
+    file: '.gitlab-ci.yml'
+
+# mask default (only tagged commits) to always deploy
+"Autovalidate R (package submission)":
+  rules:
+    - if: '$AUTOVALIDATE_R_DEPLOY == "true"'
