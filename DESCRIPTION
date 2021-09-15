@@ -1,6 +1,6 @@
 Package: testpkg
 Title: A Simple Package 
-Version: 0.1.0.9001
+Version: 0.1.0.9002
 Authors@R: 
     person(given = "First",
            family = "Last",
